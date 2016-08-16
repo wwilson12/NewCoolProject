@@ -1,8 +1,8 @@
-document.ready(function(){
-    'form'.on('submit',searchDragDictionary); //when user presses submit, the button submits
+$(document).ready(function(){
+    ('#submit-btn').on('submit',searchDragDictionary); //when user presses submit, the button submits
 });
     
-function searchDragDictionary
+/*function searchDragDictionary
     var dragWords = [{
 	'class' : 'pursefirst',
 	'names' : ["purse first", "walk into the room", "purse purse", "purse", "walk into the room purse first"]
@@ -21,31 +21,29 @@ function searchDragDictionary
 		$(‘body’).addClass(dragWords);
 	}
 }
+*/
 
-/*function findMyCity(){
-    var myCity = $('#city-type').val().toLowerCase(); //take value entered and turn into string
+function searchDragDictionary(){
+    var dragWords = $('#words').val().toLowerCase(); //take value entered and turn into string
     $('body').removeClass(); //get rid of background
     
-    if (myCity == 'new york' || myCity == 'nyc' || myCity == 'new york city'){ //if string is equal to any of these
-        $('body').addClass('nyc'); //add new background
+    if (dragWords == 'purse first' || dragWords == 'purse' || dragWords == 'purse purse' || dragWords == 'walk into the room'){ //if string is equal to any of these
+        $('body').addClass('pursefirst'); //add new background
     }
-    else if (myCity == 'sf' || myCity == 'san francisco' || myCity == 'bay area'){
-        $('body').addClass('sf');
+    else if (dragWords == 'sickening' || dragWords == 'lets get sickening' || dragWords == 'sickening'){
+        $('body').addClass('sickening');
     }
-    else if (myCity == 'los angeles' || myCity == 'la' || myCity == 'lax'){
-        $('body').addClass('la');
+    else if (dragWords == 'the shade' || dragWords == 'shade' || dragWords == 'shadey'){
+        $('body').addClass('theshade');
     }
-    else if (myCity == 'austin' || myCity == 'atx'){
-        $('body').addClass('austin');
-    }
-    else if (myCity == 'sydney' || myCity == 'syd'){
-        $('body').addClass('sydney');
+    else if (dragWords == 'yes god' || dragWords == 'yas god' || dragWords == 'yes gawd'){
+        $('body').addClass('yesgod');
     }
     else {
-        alert('Not a valid city'); //throw an error
+        alert('Not in our dictionary yet, hunty!'); //throw an error
     }
     event.preventDefault();
-}*/
+}
         
 /*var cities = [{
 	‘class’ : ‘nyc’,

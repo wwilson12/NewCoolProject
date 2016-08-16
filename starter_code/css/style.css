@@ -50,7 +50,7 @@ body {
   font-size: 12px;
   line-height: 1.4;
   font-family: Helvetica, Arial, sans-serif;
-  background: url(../images/citipix_skyline.jpg) no-repeat center center fixed;
+  background: url(../images/rupaul1.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -70,8 +70,9 @@ body {
 }
 
 header {
-  background: pink;
+  background: #e9326b;
   padding: 20px 0;
+  border: 1px solid white;
 }
 
 .title {
@@ -79,7 +80,7 @@ header {
   color: #fff;
   font-size: 38px;
   font-weight: bold;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Monoton', cursive;
 }
 
 .title p {
@@ -88,10 +89,10 @@ header {
 }
 
 #words {
-  color: #6b6b6c;
+  color: #f77984;
   font-size: 38px;
   background: #fff;
-  border: 1px solid #111;
+  border: 1px solid #fff;
   padding: 0px 30px;
   display: inline-block;
   width: 680px;
@@ -102,23 +103,23 @@ header {
   vertical-align: middle;
 }
 #submit-btn {
-  background: pink;
-  color: #000;
+  background: #e9326b;
+  color: white;
   font-size: 38px;
   font-weight: bold;
   text-transform: uppercase;
-  border: 1px solid #111;
+  border: 1px solid #fff;
   text-align: center;
   display: inline-block;
   width: 250px;
   height: 72px;
   line-height: 74px;
   vertical-align: middle;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Bungee Shade', cursive;
   cursor: pointer;
 }
 #submit-btn:hover {
-  background: #fff600;
+  background: yellow;
 }
 
 .pursefirst {
