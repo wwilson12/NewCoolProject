@@ -131,9 +131,8 @@ header {
   border: 1px solid #fff;
   padding: 5px 30px 5px;
   display: inline-block;
-  width:80%;
+  width:100%;
   margin-top: 1em;
-  margin-left: 4em;
   font-family: helvetica, arial, sans-serif;
   height: 100%;
   line-height:1;
@@ -206,10 +205,6 @@ header {
     #words {
         width:100%;
         font-size: 2em;
-    }
-    .deftxt {
-    	margin-left: 3em;
-        margin-right: 3em;
     }
 }
 
