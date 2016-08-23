@@ -50,7 +50,7 @@ body {
   font-size: 12px;
   line-height: 1.4;
   font-family: Helvetica, Arial, sans-serif;
-  background: url(../images/rupaul1.jpg);
+  background: url(../images/rupaul1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -64,9 +64,11 @@ body {
 
 /* Center the container */
 .container {
-	width: 960px;
+	width: 100%;
 	margin: auto;
-  padding-top: 5em;
+    padding-top: 5em;
+    padding-left:5em;
+    padding-right:5em;
 }
 
 header {
@@ -90,12 +92,12 @@ header {
 
 #words {
   color: #f77984;
-  font-size: 38px;
+  font-size: 3em;
   background: #fff;
   border: 1px solid #fff;
   padding: 0px 30px;
   display: inline-block;
-  width: 680px;
+  width: 70%;
   margin-right: 24px;
   font-family: helvetica, arial, sans-serif;
   height: 72px;
@@ -105,13 +107,13 @@ header {
 #submit-btn {
   background: #e9326b;
   color: white;
-  font-size: 38px;
+  font-size: 3em;
   font-weight: bold;
   text-transform: uppercase;
   border: 1px solid #fff;
   text-align: center;
   display: inline-block;
-  width: 250px;
+  width: 25%;
   height: 72px;
   line-height: 74px;
   vertical-align: middle;
@@ -122,22 +124,94 @@ header {
   background: yellow;
 }
 
+.deftxt{
+  color: #fff;
+  font-size: 2em;
+  background: #e9326b;
+  border: 1px solid #fff;
+  padding: 5px 30px 5px;
+  display: inline-block;
+  width:80%;
+  margin-top: 1em;
+  margin-left: 4em;
+  font-family: helvetica, arial, sans-serif;
+  height: 100%;
+  line-height:1;
+  vertical-align: middle;
+}
+
+
 .pursefirst {
-  background-image: url(../images/pursefirst.gif)
+  background-image: url(../images/pursefirst.gif);
 }
 .sickening {
-  background-image: url(../images/sickening.gif)
+  background-image: url(../images/sickening.gif);
 }
 .theshade {
-  background-image: url(../images/theshade.gif)
+  background-image: url(../images/theshade.gif);
 }
 .yesgod {
-  background-image: url(../images/yesgod.gif)
+  background-image: url(../images/yesgod.gif);
 }
+.backrolls {
+    background-image: url(../images/backrolls.gif);
+}
+.eleganza {
+    background-image: url(../images/eleganza.gif);
+}
+.fish {
+    background-image: url(../images/fish.gif);
+}
+.huntey {
+    background-image: url(../images/huntey.gif);
+}
+.gagging {
+    background-image: url(../images/gagging.gif);
+}
+.lilpoundcake {
+    background-image: url(../images/lilpoundcake.gif);
+}
+.ornacia {
+    background-image: url(../images/ornacia.gif);
+}
+.sashay {
+    background-image: url(../images/sashay_away.gif);
+}
+.shealreadydone{
+    background-image: url(../images/shealreadydone.gif);
+}
+.tea{
+    background-image: url(../images/tea.gif);
+}
+.tonguepop{
+    background-image: url(../images/tonguepop.gif);
+}
+.turnedit{
+    background-image: url(../images/turnedit.gif);
+}
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/*Mobile Styling*/
+@media screen and (max-width: 900px) {
+    #submit-btn {
+        width:100%;
+        margin-top:1em;
+        font-size:2em;
+    }
+    #words {
+        width:100%;
+        font-size: 2em;
+    }
+    .deftxt {
+    	margin-left: 3em;
+        margin-right: 3em;
+    }
+}
 
 
 
